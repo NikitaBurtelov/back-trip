@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "routes.baseUrl",
+      "type": "java.net.URL",
+      "defaultValue": "https://www.tutu.ru/02.php",
+      "description": "Description for routes.baseUrl."
+  }
+] }
