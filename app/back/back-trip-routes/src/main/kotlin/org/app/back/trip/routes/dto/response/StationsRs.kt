@@ -9,7 +9,7 @@ class StationsRs(
 class Countries(
     val regions: List<Regions>,
     val codes: Codes,
-    val title: String?
+    val title: String
 )
 
 class Regions(
@@ -24,7 +24,7 @@ class Regions(
 class Settlements(
     val title: String?,
     val codes: Codes,
-    val stations: List<Stations?>?
+    val stations: List<Stations>
 )
 
 class Stations(
@@ -32,7 +32,7 @@ class Stations(
     val codes: Codes,
     @SerializedName(value = "station_type")
     val stationType: String?,
-    val title: String?,
+    val title: String,
     val longitude: String?,
     @SerializedName(value = "transport_type")
     val transportType: String?,

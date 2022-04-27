@@ -11,8 +11,12 @@ class RoutesEntity(
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int? = null,
-    @Column(name = "id_station")
-    val idStation: String? = "test",
+    @Column(name = "code_station")
+    val codeStation: String,
     @Column(name = "title")
-    val title: String? = "test"
+    val title: String,
+    @Column(name = "station_type")
+    val stationType: String,
+    @Column(name = "countries")
+    val countries: String
 )

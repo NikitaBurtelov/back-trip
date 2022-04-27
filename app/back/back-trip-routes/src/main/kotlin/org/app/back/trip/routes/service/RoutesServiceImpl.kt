@@ -53,13 +53,16 @@ class RoutesServiceImpl @Autowired constructor(
     override fun save() {
         val stationsRs = station()
         stationsRs.countries.forEach { countries ->
+            val titleCountries = countries.title
             countries.regions.forEach { region->
                 region.settlements.forEach { settlement->
                     settlement.stations!!.forEach { station->
                         routesRepository.save(
                             RoutesEntity(
-                                idStation = station!!.codes.yandexCode,
-                                title = station.title
+                                codeStation = station.codes.yandexCode!!,
+                                title = station.title,
+                                stationType = station.stationType!!,
+                                countries = titleCountries
                             )
                         )
                     }
