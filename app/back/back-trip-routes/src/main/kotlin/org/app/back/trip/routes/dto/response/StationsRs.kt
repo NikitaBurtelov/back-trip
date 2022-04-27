@@ -3,7 +3,7 @@ package org.app.back.trip.routes.dto.response
 import com.google.gson.annotations.SerializedName
 
 class StationsRs(
-    val countries: List<Countries>,
+    val countries: List<Countries>?,
 )
 
 class Countries(

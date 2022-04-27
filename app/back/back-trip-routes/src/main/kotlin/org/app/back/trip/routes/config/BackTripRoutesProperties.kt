@@ -8,4 +8,5 @@ class BackTripRoutesProperties {
     lateinit var version: String
     lateinit var key: String
     lateinit var lang: String
+    lateinit var format: String
 }

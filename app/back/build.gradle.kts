@@ -49,6 +49,8 @@ extra.apply {
 
     set("junit", "junit:junit:4.12")
 
+    set("dotEnv", "io.github.cdimascio:dotenv-kotlin:6.2.2")
+
     set("junitJupiterApi", "org.junit.jupiter:junit-jupiter-api:5.8.2")
     set("junitJupiterEngine", "org.junit.jupiter:junit-jupiter-engine:5.8.2")
     set("junitJupiterParams", "org.junit.jupiter:junit-jupiter-params:5.8.2")
@@ -116,6 +118,8 @@ configure(subprojects) {
         "implementation"(rootProject.extra["springBootStarterWeb"] as String)
 
         "implementation"(rootProject.extra["logging"] as String)
+
+        "implementation"(rootProject.extra["dotEnv"] as String)
 
         "testImplementation"(rootProject.extra["springBootTest"] as String)
         "testImplementation"(rootProject.extra["springBootStarterTest"] as String)

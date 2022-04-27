@@ -1,5 +1,7 @@
 package org.app.back.trip.routes
 
+//import org.springframework.data.jpa.repository.config.EnableJpaRepositories
+import io.github.cdimascio.dotenv.dotenv
 import org.app.back.trip.routes.config.BackTripRoutesProperties
 import org.app.back.trip.routes.service.RoutesService
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -7,7 +9,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories
-//import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 import org.springframework.scheduling.annotation.Async
 
 @Async
@@ -22,6 +23,12 @@ import org.springframework.scheduling.annotation.Async
 class BackTripRoutesApp
 
 fun main(args: Array<String>) {
+    dotenv {
+        filename = ".env"
+        ignoreIfMalformed = true
+        ignoreIfMissing = true
+        systemProperties = true
+    }
     val context = runApplication<BackTripRoutesApp>(*args)
 
     val routesService = context.getBean(RoutesService::class.java)
