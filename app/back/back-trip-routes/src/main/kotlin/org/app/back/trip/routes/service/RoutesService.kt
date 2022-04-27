@@ -1,9 +1,8 @@
 package org.app.back.trip.routes.service
 
-import org.app.back.trip.routes.db.domain.RoutesEntity
-import java.net.URL
+import org.app.back.trip.routes.dto.response.StationsRs
 
 interface RoutesService {
-    fun parse(pageUrl: URL): RoutesEntity
-    fun save(routesEntity: RoutesEntity)
+    fun station(): StationsRs
+    fun save()
 }

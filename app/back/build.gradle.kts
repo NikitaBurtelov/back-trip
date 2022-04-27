@@ -45,7 +45,7 @@ extra.apply {
     set("springKafka", "org.springframework.kafka:spring-kafka:2.8.0")
     set("springRetry", "org.springframework.retry:spring-retry:1.3.1")
 
-    set("logging", "implementation(io.github.microutils:kotlin-logging-jvm:2.1.21)")
+    set("logging", "io.github.microutils:kotlin-logging-jvm:2.1.21")
 
     set("junit", "junit:junit:4.12")
 
@@ -114,6 +114,9 @@ configure(subprojects) {
 
         "implementation"(rootProject.extra["springBootStarterActuator"] as String)
         "implementation"(rootProject.extra["springBootStarterWeb"] as String)
+
+        "implementation"(rootProject.extra["logging"] as String)
+
         "testImplementation"(rootProject.extra["springBootTest"] as String)
         "testImplementation"(rootProject.extra["springBootStarterTest"] as String)
 
