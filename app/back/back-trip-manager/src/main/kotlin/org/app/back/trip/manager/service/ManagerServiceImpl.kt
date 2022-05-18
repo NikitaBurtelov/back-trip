@@ -2,25 +2,30 @@ package org.app.back.trip.manager.service
 
 import com.google.gson.GsonBuilder
 import org.app.back.trip.manager.config.BackTripManagerProperties
+import org.app.back.trip.manager.db.domain.RoutesEntity
+import org.app.back.trip.manager.dto.RouteSearchRq
+import org.app.back.trip.manager.dto.RouteSearchRs
 import org.app.back.trip.manager.dto.RoutesInfoRq
-import org.app.back.trip.manager.dto.RouteSearchResult
+import org.app.back.trip.manager.dto.RoutesInfoRs
+import org.app.back.trip.manager.repository.RoutesRepository
 import org.jsoup.Jsoup
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
 class ManagerServiceImpl @Autowired constructor(
-    val properties: BackTripManagerProperties
-) {
-    fun stationInfo(request: RoutesInfoRq): RouteSearchResult {
+    val properties: BackTripManagerProperties,
+    val routesRepository: RoutesRepository
+): ManagerService {
+    fun stationInfo(request: RouteSearchRq): RouteSearchRs {
         val doc = Jsoup.connect(
             properties.baseUrl +
                     "/${properties.version}" +
                     "/search/?" +
                     "apikey=${properties.key}" +
                     "&format=${properties.format}" +
-                    "&from=${request.departureStationTitle}" +
-                    "&to=${request.arrivalStationName}" +
+                    "&from=${request.from}" +
+                    "&to=${request.to}" +
                     "&lang=${properties.lang}" +
                     "&date=${request.date}"
         )
@@ -36,12 +41,30 @@ class ManagerServiceImpl @Autowired constructor(
 
         return gson.fromJson(
             doc.body().text(),
-            RouteSearchResult::class.java
+            RouteSearchRs::class.java
         )
     }
 
-    fun search(request: RoutesInfoRq) {
-        val routesInfoRs = stationInfo(request)
+    fun routesEntity(stationName: String): RoutesEntity {
+        return routesRepository.findByTitleAllIgnoreCase(stationName)
+    }
 
+    override fun routesInfo(routesInfoRq: RoutesInfoRq): RoutesInfoRs {
+        val departureStationTitle = routesInfoRq.departureStationTitle
+        val arrivalStationName = routesInfoRq.arrivalStationName
+
+        val endRouteEntity = routesEntity(arrivalStationName)
+        val startRouteEntity = routesEntity(arrivalStationName)
+
+
+
+        stationInfo(
+            RouteSearchRq(
+                to = endRouteEntity.codeStation,
+                from = startRouteEntity.codeStation,
+                date = routesInfoRq.date!!
+            )
+        )
+    return RoutesInfoRs()
     }
 }

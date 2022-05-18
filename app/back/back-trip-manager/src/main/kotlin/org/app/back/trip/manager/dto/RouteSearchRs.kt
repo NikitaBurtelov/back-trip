@@ -2,7 +2,7 @@ package org.app.back.trip.manager.dto
 
 import com.google.gson.annotations.SerializedName
 
-class RouteSearchResult(
+class RouteSearchRs(
     val pagination: Pagination,
     @SerializedName("interval_segments")
     val intervalSegments: List<IntervalSegment>,
