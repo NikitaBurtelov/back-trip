@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface RoutesRepository: JpaRepository<RoutesEntity, Int> {
-    fun findByTitleAllIgnoreCase(title: String): RoutesEntity
+    fun findByTitleAndStationTypeAllIgnoreCase(title: String, stationType: String? = "platform"): RoutesEntity
 }

@@ -17,7 +17,7 @@ class ManagerServiceImpl @Autowired constructor(
     val properties: BackTripManagerProperties,
     val routesRepository: RoutesRepository
 ): ManagerService {
-    fun stationInfo(request: RouteSearchRq): RouteSearchRs {
+    override fun stationInfo(request: RouteSearchRq): RouteSearchRs {
         val doc = Jsoup.connect(
             properties.baseUrl +
                     "/${properties.version}" +
@@ -45,26 +45,15 @@ class ManagerServiceImpl @Autowired constructor(
         )
     }
 
+    //TODO подумать какой stationType передать ?? platform or train_station
     fun routesEntity(stationName: String): RoutesEntity {
-        return routesRepository.findByTitleAllIgnoreCase(stationName)
+        return routesRepository.findByTitleAndStationTypeAllIgnoreCase(stationName)
     }
 
     override fun routesInfo(routesInfoRq: RoutesInfoRq): RoutesInfoRs {
-        val departureStationTitle = routesInfoRq.departureStationTitle
-        val arrivalStationName = routesInfoRq.arrivalStationName
-
-        val endRouteEntity = routesEntity(arrivalStationName)
-        val startRouteEntity = routesEntity(arrivalStationName)
-
-
-
-        stationInfo(
-            RouteSearchRq(
-                to = endRouteEntity.codeStation,
-                from = startRouteEntity.codeStation,
-                date = routesInfoRq.date!!
-            )
-        )
+        //TODO
+        routesEntity(routesInfoRq.departureStationTitle)
+        routesEntity(routesInfoRq.arrivalStationName)
     return RoutesInfoRs()
     }
 }

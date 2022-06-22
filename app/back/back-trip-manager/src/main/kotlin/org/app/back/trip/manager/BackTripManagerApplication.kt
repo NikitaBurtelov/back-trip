@@ -10,15 +10,17 @@ import org.springframework.boot.runApplication
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 import org.springframework.scheduling.annotation.Async
+import org.springframework.web.servlet.config.annotation.EnableWebMvc
+import java.util.*
 
-@Async
+@EnableConfigurationProperties(BackTripManagerProperties::class)
+@EnableWebMvc
 @ComponentScan(
     basePackages = ["org.app.back.trip.manager.*"]
 )
 @EnableJpaRepositories(
     basePackages = ["org.app.back.trip.manager.repository"]
 )
-@EnableConfigurationProperties(BackTripManagerProperties::class)
 @SpringBootApplication
 class BackTripManagerApplication
 
@@ -39,4 +41,6 @@ fun main(args: Array<String>) {
     )
 
     managerServiceBean.routesInfo(routesInfoRq)
+
+
 }

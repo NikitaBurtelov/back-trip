@@ -1,6 +1,5 @@
 package org.app.back.trip.routes
 
-//import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 import io.github.cdimascio.dotenv.dotenv
 import org.app.back.trip.routes.config.BackTripRoutesProperties
 import org.app.back.trip.routes.service.RoutesService
