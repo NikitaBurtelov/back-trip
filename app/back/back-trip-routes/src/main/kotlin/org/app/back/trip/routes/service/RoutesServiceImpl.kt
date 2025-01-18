@@ -11,7 +11,6 @@ import org.jsoup.nodes.Document
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
-
 @Component
 class RoutesServiceImpl @Autowired constructor(
     private val properties: BackTripRoutesProperties,
@@ -48,7 +47,6 @@ class RoutesServiceImpl @Autowired constructor(
         val stationsRs = station()
         log.info("Start")
         stationsRs.countries!!.forEach { countries ->
-            val titleCountries = countries.title
             countries.regions.forEach { region->
                 region.settlements.forEach { settlement->
                     settlement.stations.forEach { station->
@@ -57,7 +55,6 @@ class RoutesServiceImpl @Autowired constructor(
                                 codeStation = station.codes.yandexCode!!,
                                 title = station.title,
                                 stationType = station.stationType!!,
-                                country = titleCountries
                             )
                         )
                     }

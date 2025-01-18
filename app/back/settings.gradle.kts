@@ -4,5 +4,6 @@ val rootModuleName = "back-trip"
 include(
     "$rootModuleName-app",
     "$rootModuleName-manager",
-    "$rootModuleName-routes"
+    "$rootModuleName-routes",
+    "$rootModuleName-test-factory"
 )

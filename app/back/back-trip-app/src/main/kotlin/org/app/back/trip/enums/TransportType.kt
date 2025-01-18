@@ -1,4 +1,4 @@
-package org.app.back.trip.manager.enum
+package org.app.back.trip.enums
 
 enum class TransportType {
     PLANE,

@@ -1,4 +1,4 @@
-package org.app.back.trip.manager.config
+package org.app.back.trip.manager.config.properties
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 

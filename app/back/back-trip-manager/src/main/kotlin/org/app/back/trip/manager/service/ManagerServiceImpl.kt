@@ -1,59 +1,68 @@
 package org.app.back.trip.manager.service
 
 import com.google.gson.GsonBuilder
-import org.app.back.trip.manager.config.BackTripManagerProperties
+import mu.KotlinLogging
+import org.app.back.trip.manager.config.properties.BackTripManagerProperties
 import org.app.back.trip.manager.db.domain.RoutesEntity
-import org.app.back.trip.manager.dto.RouteSearchRq
 import org.app.back.trip.manager.dto.RouteSearchRs
 import org.app.back.trip.manager.dto.RoutesInfoRq
-import org.app.back.trip.manager.dto.RoutesInfoRs
 import org.app.back.trip.manager.repository.RoutesRepository
-import org.jsoup.Jsoup
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
+import org.springframework.web.client.RestTemplate
 
 @Service
 class ManagerServiceImpl @Autowired constructor(
-    val properties: BackTripManagerProperties,
-    val routesRepository: RoutesRepository
+    private val restTemplate: RestTemplate,
+    private val properties: BackTripManagerProperties,
+    private val routesRepository: RoutesRepository
 ): ManagerService {
-    override fun stationInfo(request: RouteSearchRq): RouteSearchRs {
-        val doc = Jsoup.connect(
-            properties.baseUrl +
-                    "/${properties.version}" +
-                    "/search/?" +
-                    "apikey=${properties.key}" +
-                    "&format=${properties.format}" +
-                    "&from=${request.from}" +
-                    "&to=${request.to}" +
-                    "&lang=${properties.lang}" +
-                    "&date=${request.date}"
-        )
-            .userAgent("Chrome/4.0.249.0 Safari/532.5")
-            .referrer("http://www.google.com")
-            .maxBodySize(0)
-            .timeout(0)
-            .ignoreContentType(true)
-            .ignoreHttpErrors(true)
-            .get()
+    val log = KotlinLogging.logger {}
 
-        val gson = GsonBuilder().setPrettyPrinting().create()
+    override fun stationInfo(request: RoutesInfoRq): RouteSearchRs {
+        try {
+            val codeStationFrom = findRoutesEntityByTitle(request.from).codeStation
+            val codeStationTo = findRoutesEntityByTitle(request.to).codeStation
 
-        return gson.fromJson(
-            doc.body().text(),
-            RouteSearchRs::class.java
-        )
+            val resp = restTemplate.getForEntity(
+                properties.baseUrl +
+                        "/${properties.version}" +
+                        "/search/?" +
+                        "apikey=${properties.key}" +
+                        "&format=${properties.format}" +
+                        "&from=$codeStationFrom" +
+                        "&to=$codeStationTo" +
+                        "&date=${request.date}" +
+                        "&transfers=false" +
+                        "&lang=${properties.lang}",
+                String::class.java
+            )
+
+            log.info("YANDEX rs: ${resp.body}")
+
+            val gson = GsonBuilder().setPrettyPrinting().create()
+
+            return gson.fromJson(
+                resp.body,
+                RouteSearchRs::class.java
+            )
+        } catch (e: Exception) {
+            log.warn(e.message)
+            throw e
+        }
     }
 
-    //TODO подумать какой stationType передать ?? platform or train_station
-    fun routesEntity(stationName: String): RoutesEntity {
-        return routesRepository.findByTitleAndStationTypeAllIgnoreCase(stationName)
-    }
-
-    override fun routesInfo(routesInfoRq: RoutesInfoRq): RoutesInfoRs {
-        //TODO
-        routesEntity(routesInfoRq.departureStationTitle)
-        routesEntity(routesInfoRq.arrivalStationName)
-    return RoutesInfoRs()
+    private fun findRoutesEntityByTitle(
+        stationName: String,
+        stationType: List<String> = listOf(
+            "platform",
+            "train_station",
+            "station"
+        )
+    ): RoutesEntity {
+        return routesRepository.findFirstByTitleAndStationTypeInIgnoreCase(
+            stationName,
+            stationType
+        )
     }
 }

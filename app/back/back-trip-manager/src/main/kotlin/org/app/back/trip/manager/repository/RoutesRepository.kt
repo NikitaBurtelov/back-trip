@@ -6,5 +6,23 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface RoutesRepository: JpaRepository<RoutesEntity, Int> {
-    fun findByTitleAndStationTypeAllIgnoreCase(title: String, stationType: String? = "platform"): RoutesEntity
+    fun findFirstByTitleAndStationTypeAllIgnoreCase(
+        title: String,
+        stationType: String? = "platform"
+    ): RoutesEntity
+
+    fun findFirstByTitleAndStationTypeInIgnoreCase(
+        title: String,
+        stationType: Collection<String>
+    ): RoutesEntity
+
+    fun findByTitleAndStationTypeAllIgnoreCase(
+        title: String,
+        stationType: String? = "platform"
+    ): RoutesEntity
+
+    fun findByTitleAndStationTypeInIgnoreCase(
+        title: String,
+        stationType: Collection<String>
+    ): RoutesEntity
 }

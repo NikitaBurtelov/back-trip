@@ -33,6 +33,9 @@ extra.apply {
     set("springBootStarterDataJpa", "org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion")
     set("springBootStarterActuator", "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion")
 
+    //Tg api
+    set("telegramBots", "org.telegram:telegrambots:6.9.7.1")
+
     //DataBase
     set("postgresql", "org.postgresql:postgresql:42.3.1")
     set("jdbc", "com.oracle.database.jdbc:ojdbc8")
@@ -40,12 +43,12 @@ extra.apply {
     //Jsoup
     set("jsoup", "org.jsoup:jsoup:1.14.3")
 
-
     set("springDataKeyValue", "org.springframework.data:spring-data-keyvalue:2.6.0")
     set("springKafka", "org.springframework.kafka:spring-kafka:2.8.0")
     set("springRetry", "org.springframework.retry:spring-retry:1.3.1")
 
     set("logging", "io.github.microutils:kotlin-logging-jvm:2.1.21")
+    set("springBootStarterLogging", "org.springframework.boot:spring-boot-starter-logging")
 
     set("junit", "junit:junit:4.12")
 
@@ -56,7 +59,6 @@ extra.apply {
     set("junitJupiterParams", "org.junit.jupiter:junit-jupiter-params:5.8.2")
     set("junitVintageEngine", "org.junit.vintage:junit-vintage-engine:5.8.2")
     set("junitJupiterLauncher", "org.junit.platform:junit-platform-launcher:1.8.2")
-    set("telegram", "org.telegram:telegrambots:5.7.1")
     set("telegramStarter", "org.telegram:telegrambots-spring-boot-starter:5.7.1")
 
     set("mockitoCore", "org.mockito:mockito-core:4.1.0")
@@ -65,8 +67,6 @@ extra.apply {
     set("mockitoKotlin", "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
 
     set("springDocOpenApiUi", "org.springdoc:springdoc-openapi-ui:1.6.1")
-
-    set("postgresql", "org.postgresql:postgresql:42.3.1")
 }
 
 configure(subprojects) {
@@ -118,6 +118,7 @@ configure(subprojects) {
         "implementation"(rootProject.extra["springBootStarterWeb"] as String)
 
         "implementation"(rootProject.extra["logging"] as String)
+        "implementation"(rootProject.extra["springBootStarterLogging"] as String)
 
         "implementation"(rootProject.extra["dotEnv"] as String)
 

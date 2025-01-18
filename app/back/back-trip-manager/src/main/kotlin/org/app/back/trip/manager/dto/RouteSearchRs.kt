@@ -1,5 +1,6 @@
 package org.app.back.trip.manager.dto
 
+import com.fasterxml.jackson.annotation.JsonProperty
 import com.google.gson.annotations.SerializedName
 
 class RouteSearchRs(
@@ -20,32 +21,9 @@ class IntervalSegment(
     val from: SegmentsFromOrTo,
     val to: SegmentsFromOrTo,
     val thread: Thread,
+    @get:JsonProperty("departure_platfrorm")
     @SerializedName("departure_platfrorm")
     val departurePlatform: String? = null,
-    val stops: String,
-    @SerializedName("departure_terminal")
-    val departure_terminal: String? = null,
-    @SerializedName("has_transfers")
-    val hasTransfers: Boolean,
-    @SerializedName("tickets_info")
-    val ticketsInfo: TicketsInfo,
-    val duration: Int,
-    @SerializedName("arrival_terminal")
-    val arrivalTerminal: String? = null,
-    @SerializedName("start_date")
-    val startDate: String,
-    @SerializedName("arrival_platform")
-    val arrivalPlatform: String
-)
-
-class Segment(
-    val arrival: String,
-    val from: SegmentsFromOrTo,
-    val to: String,
-    val thread: Thread,
-    @SerializedName("departure_platform")
-    val departurePlatform: String? = null,
-    val departure: String,
     val stops: String,
     @SerializedName("departure_terminal")
     val departureTerminal: String? = null,
@@ -60,6 +38,30 @@ class Segment(
     val startDate: String,
     @SerializedName("arrival_platform")
     val arrivalPlatform: String
+)
+
+class Segment(
+    val arrival: String?,
+    val from: SegmentsFromOrTo?,
+    val to: SegmentsFromOrTo?,
+    val thread: Thread?,
+    @SerializedName("departure_platform")
+    val departurePlatform: String? = null,
+    val departure: String?,
+    val stops: String?,
+    @SerializedName("departure_terminal")
+    val departureTerminal: String? = null,
+    @SerializedName("has_transfers")
+    val hasTransfers: Boolean?,
+    @SerializedName("tickets_info")
+    val ticketsInfo: TicketsInfo?,
+    val duration: Int?,
+    @SerializedName("arrival_terminal")
+    val arrivalTerminal: String? = null,
+    @SerializedName("start_date")
+    val startDate: String?,
+    @SerializedName("arrival_platform")
+    val arrivalPlatform: String?
 )
 
 class TicketsInfo(

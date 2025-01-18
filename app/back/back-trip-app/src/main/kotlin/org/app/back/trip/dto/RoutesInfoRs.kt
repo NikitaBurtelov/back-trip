@@ -1,4 +1,4 @@
-package org.app.back.trip.manager.dto
+package org.app.back.trip.dto
 
 data class RoutesInfoRs(
     val to: String,

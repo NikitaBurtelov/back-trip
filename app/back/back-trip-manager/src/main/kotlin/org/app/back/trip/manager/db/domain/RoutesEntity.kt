@@ -14,7 +14,5 @@ class RoutesEntity(
     @Column(name = "title")
     val title: String,
     @Column(name = "station_type")
-    val stationType: String,
-    @Column(name = "country")
-    val country: String?="test"
+    val stationType: String
 )

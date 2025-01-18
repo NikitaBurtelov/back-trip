@@ -1,0 +1,2152 @@
+{
+  "search": {
+    "from": {
+      "type": "station",
+      "title": "Москва (Казанский вокзал)",
+      "short_title": "М-Казанская",
+      "popular_title": "Казанский вокзал",
+      "code": "s2000003",
+      "station_type": "train_station",
+      "station_type_name": "вокзал",
+      "transport_type": "train"
+    },
+    "to": {
+      "type": "station",
+      "title": "Голутвин",
+      "short_title": "",
+      "popular_title": "",
+      "code": "s9600716",
+      "station_type": "train_station",
+      "station_type_name": "вокзал",
+      "transport_type": "train"
+    },
+    "date": "2023-02-24"
+  },
+  "segments": [
+    {
+      "thread": {
+        "number": "6104",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6104_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6104_0_2000003_g23_4"
+      },
+      "stops": "кроме: Трофимово (84 км)",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8880.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T04:53:00+03:00",
+      "arrival": "2023-02-24T07:21:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6106",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6106_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6106_0_2000003_g23_4"
+      },
+      "stops": "кроме: Трофимово (84 км)",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8880.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T05:30:00+03:00",
+      "arrival": "2023-02-24T07:58:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6108",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6108_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6108_0_2000003_g23_4"
+      },
+      "stops": "до Люберцы 1 везде, далее Фабричная, далее везде, кроме: Ипподром, Радуга, 63 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8160.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T06:30:00+03:00",
+      "arrival": "2023-02-24T08:46:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6110",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6110_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6110_0_2000003_g23_4"
+      },
+      "stops": "кроме: Кратово, Есенинская",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8820.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T06:55:00+03:00",
+      "arrival": "2023-02-24T09:22:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "7040",
+        "title": "Москва (Казанский вокзал) — Рязань-1",
+        "short_title": "М-Казанская — Рязань-1",
+        "express_type": "express",
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "7040_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "фирменный экспресс (билеты c указанием мест)",
+          "code": "firmex",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=7040_0_2000003_g23_4"
+      },
+      "stops": "Выхино, Отдых, 88 км, Голутвин",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 5760.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T07:16:00+03:00",
+      "arrival": "2023-02-24T08:52:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6992",
+        "title": "Москва (Казанский вокзал) — Рязань-1",
+        "short_title": "М-Казанская — Рязань-1",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6992_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6992_0_2000003_g23_4"
+      },
+      "stops": "кроме: Совхоз, Радуга, 63 км, Золотово, Трофимово (84 км), Конев Бор, 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8400.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T08:16:00+03:00",
+      "arrival": "2023-02-24T10:36:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "7084",
+        "title": "Москва (Казанский вокзал) — Рязань-1",
+        "short_title": "М-Казанская — Рязань-1",
+        "express_type": "express",
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "7084_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "фирменный экспресс (билеты c указанием мест)",
+          "code": "firmex",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=7084_0_2000003_g23_4"
+      },
+      "stops": "Выхино, 88 км, Коломна, Голутвин",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 5400.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T08:30:00+03:00",
+      "arrival": "2023-02-24T10:00:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6112",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6112_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6112_0_2000003_g23_4"
+      },
+      "stops": "до Ипподром везде, далее Бронницы, Белоозёрская, далее везде, кроме: Трофимово (84 км), Шиферная, Конев Бор, 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8520.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T08:34:00+03:00",
+      "arrival": "2023-02-24T10:56:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "7182",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": "express",
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "7182_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "экспресс РЭКС",
+          "code": "rex",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=7182_0_2000003_g23_4"
+      },
+      "stops": "Выхино, Люберцы 1, Отдых, Раменское, Бронницы, Белоозёрская, Виноградово, Конобеево, 88 км, Москворецкая, Цемгигант, Пески, Коломна, Голутвин",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 7080.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T08:47:00+03:00",
+      "arrival": "2023-02-24T10:45:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6114",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6114_1_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6114_1_2000003_g23_4"
+      },
+      "stops": "везде",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 9120.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T09:00:00+03:00",
+      "arrival": "2023-02-24T11:32:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6116",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6116_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6116_0_2000003_g23_4"
+      },
+      "stops": "до Люберцы 1 везде, далее Фабричная, далее везде, кроме: Ипподром, Трофимово (84 км), 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8160.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T09:38:00+03:00",
+      "arrival": "2023-02-24T11:54:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6118",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6118_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6118_0_2000003_g23_4"
+      },
+      "stops": "кроме: 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 9060.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T10:57:00+03:00",
+      "arrival": "2023-02-24T13:28:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6120",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6120_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6120_0_2000003_g23_4"
+      },
+      "stops": "везде",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 9060.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T11:32:00+03:00",
+      "arrival": "2023-02-24T14:03:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6122",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6122_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6122_0_2000003_g23_4"
+      },
+      "stops": "кроме: Радуга, 63 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8880.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T12:32:00+03:00",
+      "arrival": "2023-02-24T15:00:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "7042",
+        "title": "Москва (Казанский вокзал) — Рязань-1",
+        "short_title": "М-Казанская — Рязань-1",
+        "express_type": "express",
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "7042_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "фирменный экспресс (билеты c указанием мест)",
+          "code": "firmex",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=7042_0_2000003_g23_4"
+      },
+      "stops": "Выхино, Отдых, 88 км, Голутвин",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 5280.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T12:45:00+03:00",
+      "arrival": "2023-02-24T14:13:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "7184",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": "express",
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "7184_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "экспресс РЭКС",
+          "code": "rex",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=7184_0_2000003_g23_4"
+      },
+      "stops": "Выхино, Люберцы 1, Отдых, Раменское, Бронницы, Белоозёрская, Виноградово, Конобеево, 88 км, Москворецкая, Цемгигант, Пески, Коломна, Голутвин",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 6720.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T13:38:00+03:00",
+      "arrival": "2023-02-24T15:30:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6124",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6124_1_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6124_1_2000003_g23_4"
+      },
+      "stops": "везде",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 9240.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T14:20:00+03:00",
+      "arrival": "2023-02-24T16:54:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6994",
+        "title": "Москва (Казанский вокзал) — Рязань-1",
+        "short_title": "М-Казанская — Рязань-1",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6994_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6994_0_2000003_g23_4"
+      },
+      "stops": "до Пески везде, кроме: Совхоз, Радуга, 63 км, Золотово, Трофимово (84 км), далее Коломна, Голутвин",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8520.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T15:10:00+03:00",
+      "arrival": "2023-02-24T17:32:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6126",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6126_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6126_0_2000003_g23_4"
+      },
+      "stops": "кроме: 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 9060.0,
+      "has_transfers": false,
+      "tickets_info": null,
+      "departure": "2023-02-24T15:25:00+03:00",
+      "arrival": "2023-02-24T17:56:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6128",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6128_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6128_0_2000003_g23_4"
+      },
+      "stops": "везде",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 9000.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T16:25:00+03:00",
+      "arrival": "2023-02-24T18:55:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6130",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6130_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6130_0_2000003_g23_4"
+      },
+      "stops": "кроме: Трофимово (84 км), 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8880.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T17:02:00+03:00",
+      "arrival": "2023-02-24T19:30:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6132",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6132_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6132_0_2000003_g23_4"
+      },
+      "stops": "до Люберцы 1 везде, далее Фабричная, далее везде, кроме: Ипподром, Конев Бор, 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8100.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T17:25:00+03:00",
+      "arrival": "2023-02-24T19:40:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "7044",
+        "title": "Москва (Казанский вокзал) — Рязань-1",
+        "short_title": "М-Казанская — Рязань-1",
+        "express_type": "express",
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "7044_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "фирменный экспресс (билеты c указанием мест)",
+          "code": "firmex",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=7044_0_2000003_g23_4"
+      },
+      "stops": "Выхино, 88 км, Голутвин",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 6180.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": []
+      },
+      "departure": "2023-02-24T18:20:00+03:00",
+      "arrival": "2023-02-24T20:03:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6134",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6134_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6134_0_2000003_g23_4"
+      },
+      "stops": "кроме: Трофимово (84 км)",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 9060.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T18:43:00+03:00",
+      "arrival": "2023-02-24T21:14:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "7186",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": "express",
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "7186_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "экспресс РЭКС",
+          "code": "rex",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=7186_0_2000003_g23_4"
+      },
+      "stops": "Выхино, Люберцы 1, Отдых, Раменское, Бронницы, Белоозёрская, Виноградово, Конобеево, 88 км, Москворецкая, Цемгигант, Пески, Коломна, Голутвин",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 6960.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 470,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T18:48:00+03:00",
+      "arrival": "2023-02-24T20:44:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6996",
+        "title": "Москва (Казанский вокзал) — Рязань-1",
+        "short_title": "М-Казанская — Рязань-1",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6996_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6996_0_2000003_g23_4"
+      },
+      "stops": "Выхино, Люберцы 1, Раменское, Бронницы, Белоозёрская, далее везде, кроме: Трофимово (84 км), 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 7020.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T19:23:00+03:00",
+      "arrival": "2023-02-24T21:20:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6136",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6136_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6136_0_2000003_g23_4"
+      },
+      "stops": "до Люберцы 1 везде, далее Панки, Быково, далее везде, кроме: Радуга, 63 км, Трофимово (84 км), 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8340.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T20:00:00+03:00",
+      "arrival": "2023-02-24T22:19:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6138",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6138_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6138_0_2000003_g23_4"
+      },
+      "stops": "кроме: Трофимово (84 км), Конев Бор, 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8760.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T20:25:00+03:00",
+      "arrival": "2023-02-24T22:51:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6140",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6140_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Стандарт плюс",
+          "code": "stdplus",
+          "color": "#17c104"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6140_0_2000003_g23_4"
+      },
+      "stops": "кроме: Трофимово (84 км), Конев Бор",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8880.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T20:50:00+03:00",
+      "arrival": "2023-02-24T23:18:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6998",
+        "title": "Москва (Казанский вокзал) — Луховицы",
+        "short_title": "М-Казанская — Луховицы",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6998_0_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6998_0_2000003_g23_4"
+      },
+      "stops": "кроме: 113 км",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 8880.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T21:30:00+03:00",
+      "arrival": "2023-02-24T23:58:00+03:00",
+      "start_date": "2023-02-24"
+    },
+    {
+      "thread": {
+        "number": "6142",
+        "title": "Москва (Казанский вокзал) — Голутвин",
+        "short_title": "М-Казанская — Голутвин",
+        "express_type": null,
+        "transport_type": "suburban",
+        "carrier": {
+          "code": 153,
+          "title": "Центральная пригородная пассажирская компания",
+          "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+          },
+          "address": "г. Москва, ул.Новорязанская, д.18, стр.22",
+          "url": "http://www.central-ppk.ru/",
+          "email": "info@central-ppk.ru",
+          "contacts": "&bull; <strong>Горячая линия для пассажиров:</strong><br/>телефон +7 (800) 775-00-00 <i>(звонок из регионов России бесплатный)</i><br/><br/>\r\n&bull; <strong>Для юридических лиц по вопросам перевозки корпоративных клиентов:</strong><br/>телефон +7 (499) 266-02-65,  доб. 7842, 7582, 7368;<br/>e-mail: <a href=\"mailto:corp@central-ppk.ru\">corp@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Пожелания и предложения:</strong> <br/>факс: +7 (499) 266-02-55<br/>e-mail: <a href=\"mailto:info@central-ppk.ru\">info@central-ppk.ru</a><br/><br/>\r\n&bull; <strong>Социальные сети:</strong><br/>\r\n<a href=\"http://www.facebook.com/CentralnayaPPK\">www.facebook.com/CentralnayaPPK</a><br/>\r\n<a href=\"http://www.vk.com/centralppk\">www.vk.com/centralppk</a><br/>\r\n<a href=\"http://www.odnoklassniki.ru/centralppk\">www.odnoklassniki.ru/centralppk</a><br/>",
+          "phone": "",
+          "logo": "https://yastat.net/s3/rasp/media/data/company/logo/cppk.png",
+          "logo_svg": null
+        },
+        "uid": "6142_1_2000003_g23_4",
+        "vehicle": null,
+        "transport_subtype": {
+          "title": "Пригородный поезд",
+          "code": "suburban",
+          "color": "#CC6600"
+        },
+        "thread_method_link": "api.rasp.yandex.net/v3/thread/?date=2023-02-24&uid=6142_1_2000003_g23_4"
+      },
+      "stops": "везде",
+      "from": {
+        "type": "station",
+        "title": "Москва (Казанский вокзал)",
+        "short_title": "М-Казанская",
+        "popular_title": "Казанский вокзал",
+        "code": "s2000003",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "to": {
+        "type": "station",
+        "title": "Голутвин",
+        "short_title": "",
+        "popular_title": "",
+        "code": "s9600716",
+        "station_type": "train_station",
+        "station_type_name": "вокзал",
+        "transport_type": "train"
+      },
+      "departure_platform": "",
+      "arrival_platform": "",
+      "departure_terminal": null,
+      "arrival_terminal": null,
+      "duration": 10260.0,
+      "has_transfers": false,
+      "tickets_info": {
+        "et_marker": false,
+        "places": [
+          {
+            "name": null,
+            "price": {
+              "whole": 390,
+              "cents": 0
+            },
+            "currency": "RUB"
+          }
+        ]
+      },
+      "departure": "2023-02-24T23:14:00+03:00",
+      "arrival": "2023-02-25T02:05:00+03:00",
+      "start_date": "2023-02-24"
+    }
+  ],
+  "interval_segments": [],
+  "pagination": {
+    "total": 31,
+    "limit": 100,
+    "offset": 0
+  }
+}
