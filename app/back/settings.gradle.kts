@@ -5,5 +5,4 @@ include(
     "$rootModuleName-app",
     "$rootModuleName-manager",
     "$rootModuleName-routes",
-    "$rootModuleName-test-factory"
 )
