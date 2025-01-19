@@ -15,15 +15,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        
+      
+      - name: Enable debug logs
+        run: echo "ACTIONS_STEP_DEBUG=true" >> $GITHUB_ENV
+
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin' # Используем OpenJDK от Adoptium
-          java-version: '17'      # Укажите версию JDK, которая вам нужна
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Build with Gradle
-        run: ./app/back/gradlew build
+        run: ./app/back/gradlew build --debug
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
