@@ -23,7 +23,7 @@ jobs:
           java-version: '17'      # Укажите версию JDK, которая вам нужна
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./app/back/gradlew build
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
