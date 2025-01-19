@@ -26,7 +26,8 @@ jobs:
           java-version: '17'
 
       - name: Build with Gradle
-        run: ./app/back/gradlew build --debug
+        working-directory: ./app/back
+        run: ./gradlew build --info
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
