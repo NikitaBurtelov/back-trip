@@ -135,4 +135,9 @@ configure(subprojects) {
         "testImplementation"(rootProject.extra["mockitoKotlin"] as String)
         "testImplementation"(rootProject.extra["mockitoInline"] as String)
     }
+
+    tasks.withType<Jar> {
+        archiveBaseName.set(project.name)
+        archiveVersion.set("1.0.0")
+    }
 }
