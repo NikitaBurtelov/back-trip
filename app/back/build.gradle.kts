@@ -86,7 +86,7 @@ configure(subprojects) {
     apply(plugin = "java-library")
 
     group = "org.app.back.trip"
-    version = "1.0-SNAPSHOT"
+    version = "1.0"
 
 
     configure<JavaPluginConvention> {
