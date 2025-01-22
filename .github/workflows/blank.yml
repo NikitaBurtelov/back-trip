@@ -43,7 +43,9 @@ jobs:
 
       - name: Build Docker image for ${{ matrix.service }}
         run: |
-          cd ${{ matrix.service }}
+          BASE_PATH="app/back"
+          SERVICE_PATH="$BASE_PATH/${{ matrix.service }}"
+          cd $SERVICE_PATH
           docker build -t test-${{ matrix.service }}:latest .
 
       - name: Verify Docker image built successfully
