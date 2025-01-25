@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        service: [back-trip-main-app, back-trip-manager-app]
+        service: [back-trip-app, back-trip-manager]
 
     steps:
       - name: Checkout code
