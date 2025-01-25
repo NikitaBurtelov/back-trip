@@ -16,11 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        include:
-          - service: back-trip-app
-            project_id: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
-          - service: back-trip-manager
-            project_id: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
+        service: [back-trip-app, back-trip-manager]
 
     steps:
       - name: Checkout code
@@ -75,9 +71,16 @@ jobs:
 
       - name: Deploy to Railway
         env:
+          SERVICE: ${{ matrix.service }}
+          RAILWAY_PROJECT_BACK_TRIP_MAIN_APP: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
+          RAILWAY_PROJECT_BACK_TRIP_MANAGER: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
         run: |
-          railway up --image prod/app:${{ matrix.service }} --project ${{ matrix.project_id }}
+          if [ "$SERVICE" == "back-trip-app" ]; then
+            railway up --image prod/app:${{ matrix.service }} --project $RAILWAY_PROJECT_BACK_TRIP_MAIN_APP
+          elif [ "$SERVICE" == "back-trip-manager" ]; then
+            railway up --image prod/app:${{ matrix.service }} --project $RAILWAY_PROJECT_BACK_TRIP_MANAGER
+          fi
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
