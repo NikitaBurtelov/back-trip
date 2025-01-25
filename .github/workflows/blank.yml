@@ -65,8 +65,7 @@ jobs:
 
       - name: Install Railway CLI
         run: |
-          curl -fsSL https://railway.app/install | bash
-          export PATH=$PATH:/root/.railway/bin
+          npm install -g railway
 
       - name: Deploy to Railway
         env:
