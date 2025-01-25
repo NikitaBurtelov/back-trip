@@ -57,7 +57,7 @@ jobs:
           docker build -t prod/app:${{ matrix.service }} .
 
       - name: Verify Docker image built successfully
-        run: docker images | grep "prod/app:${{ matrix.service }}"
+        run: docker images | grep "${{ matrix.service }}"
 
       - name: Push Docker Image
         run: |
