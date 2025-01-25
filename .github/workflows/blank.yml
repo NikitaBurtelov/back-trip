@@ -74,9 +74,9 @@ jobs:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
         run: |
           if [ "$SERVICE" == "back-trip-app" ]; then
-            railway up --image ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }} --project $RAILWAY_PROJECT_BACK_TRIP_MAIN_APP
+            railway up -- --image ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }} --project $RAILWAY_PROJECT_BACK_TRIP_MAIN_APP
           elif [ "$SERVICE" == "back-trip-manager" ]; then
-            railway up --image ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }} --project $RAILWAY_PROJECT_BACK_TRIP_MANAGER
+            railway up -- --image ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }} --project $RAILWAY_PROJECT_BACK_TRIP_MANAGER
           fi
 
       - name: Cache Gradle dependencies
