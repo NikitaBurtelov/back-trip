@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        service: [back-trip-app, back-trip-manager]
+        service: [back-trip-main-app, back-trip-manager-app]
 
     steps:
       - name: Checkout code
@@ -73,9 +73,10 @@ jobs:
           RAILWAY_PROJECT_BACK_TRIP_MANAGER: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
           RAILWAY_IMAGE: ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }}
+          RAILWAY_SERVICE: ${{ matrix.service }}
         run: |
           if [ "${{ matrix.service }}" == "back-trip-app" ]; then
-             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
+            export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
           elif [ "${{ matrix.service }}" == "back-trip-manager" ]; then
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
           fi
