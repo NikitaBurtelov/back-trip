@@ -54,14 +54,13 @@ jobs:
           BASE_PATH="app/back"
           SERVICE_PATH="$BASE_PATH/${{ matrix.service }}"
           cd $SERVICE_PATH
-          docker build -t prod-${{ matrix.service }}:latest .
+          docker build -t prod/app:${{ matrix.service }} .
 
       - name: Verify Docker image built successfully
-        run: docker images | grep "prod-${{ matrix.service }}"
+        run: docker images | grep "prod/app:${{ matrix.service }}"
 
       - name: Push Docker Image
         run: |
-          docker tag app:${{ matrix.service }} prod/app:${{ matrix.service }}
           docker push prod/app:${{ matrix.service }}
 
       - name: Install Railway CLI
