@@ -64,8 +64,7 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }}
 
       - name: Install Railway CLI
-        run: |
-          npm install -g railway
+        run: npm install -g @railway/cli
 
       - name: Deploy to Railway
         env:
