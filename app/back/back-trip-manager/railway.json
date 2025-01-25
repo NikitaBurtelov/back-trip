@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "dockerfile": {
+      "image": "${DOCKER_IMAGE}",
+      "args": {
+        "SPRING_PROFILES_ACTIVE": "${SPRING_PROFILES_ACTIVE}"
+      }
+    }
+  }
+}

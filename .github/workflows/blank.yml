@@ -82,7 +82,7 @@ jobs:
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
             cd ./app/back/back-trip-manager
           fi
-          railway up -- --image ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }} --service ${{ matrix.service }}
+          railway up --service ${{ matrix.service }}
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
