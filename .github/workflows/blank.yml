@@ -80,7 +80,7 @@ jobs:
           elif [ "${{ matrix.service }}" == "back-trip-manager" ]; then
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
           fi
-          railway up
+          railway up --service ${{ matrix.service }}
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
