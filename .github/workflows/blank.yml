@@ -77,10 +77,12 @@ jobs:
         run: |
           if [ "${{ matrix.service }}" == "back-trip-app" ]; then
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
+            cd ./app/back/back-trip-app
           elif [ "${{ matrix.service }}" == "back-trip-manager" ]; then
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
+            cd ./app/back/back-trip-manager
           fi
-          railway up --service ${{ matrix.service }}-image
+          railway up --service ${{ matrix.service }}
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
