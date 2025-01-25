@@ -16,7 +16,11 @@ jobs:
 
     strategy:
       matrix:
-        service: [ back-trip-app, back-trip-manager ]
+        include:
+          - service: back-trip-app
+            project_id: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
+          - service: back-trip-manager
+            project_id: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
 
     steps:
       - name: Checkout code
@@ -32,8 +36,16 @@ jobs:
           java-version: '17'
 
       - name: Build with Gradle
+        env:
+          DB_URL: ${{ secrets.DB_URL }}
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          API_KEY: ${{ secrets.API_KEY }}
+          TG_BOT_KEY: ${{ secrets.TG_BOT_KEY }}
+          TG_BOT_NAME: ${{ secrets.TG_BOT_NAME }}
+          TG_BOT_MANAGER_URL: ${{ secrets.TG_BOT_MANAGER_URL }}
         working-directory: ./app/back
-        run: ./gradlew build --info
+        run: ./gradlew build --info -Dspring.profiles.active=prod
 
       - name: Log in to DockerHub
         uses: docker/login-action@v2
@@ -46,10 +58,26 @@ jobs:
           BASE_PATH="app/back"
           SERVICE_PATH="$BASE_PATH/${{ matrix.service }}"
           cd $SERVICE_PATH
-          docker build -t test-${{ matrix.service }}:latest .
+          docker build -t prod-${{ matrix.service }}:latest .
 
       - name: Verify Docker image built successfully
-        run: docker images | grep "test-${{ matrix.service }}"
+        run: docker images | grep "prod-${{ matrix.service }}"
+
+      - name: Push Docker Image
+        run: |
+          docker tag app:${{ matrix.service }} prod/app:${{ matrix.service }}
+          docker push prod/app:${{ matrix.service }}
+
+      - name: Install Railway CLI
+        run: |
+          curl -fsSL https://railway.app/install | bash
+          export PATH=$PATH:/root/.railway/bin
+
+      - name: Deploy to Railway
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: |
+          railway up --image prod/app:${{ matrix.service }} --project ${{ matrix.project_id }}
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
