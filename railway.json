@@ -1,8 +1,6 @@
 {
   "$schema": "https://backboard.railway.app/railway.schema.json",
-  "build": {
-    "builder": null
-  },
+  "build": {},
   "deploy": {
     "image": "nikitaburtelov/prod-app:back-trip-app-v1.1",
     "startCommand": "java -jar app.jar"
