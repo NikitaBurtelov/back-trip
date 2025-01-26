@@ -47,7 +47,7 @@ jobs:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
           IMAGE: ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }}-v1.1
         run: |
-          railway up --service ${{ matrix.service }}
+          railway up --service ${{ matrix.service }}-image
 
       - name: Cache Docker layers
         uses: actions/cache@v3
