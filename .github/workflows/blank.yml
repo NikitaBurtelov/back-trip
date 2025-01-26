@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -69,11 +66,7 @@ jobs:
       - name: Deploy to Railway
         env:
           SERVICE: ${{ matrix.service }}
-          RAILWAY_PROJECT_BACK_TRIP_MAIN_APP: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
-          RAILWAY_PROJECT_BACK_TRIP_MANAGER: ${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_IMAGE: ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }}
-          RAILWAY_SERVICE: ${{ matrix.service }}
         run: |
           if [ "${{ matrix.service }}" == "back-trip-app" ]; then
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
@@ -82,7 +75,7 @@ jobs:
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
             cd ./app/back/back-trip-manager
           fi
-          railway up --service ${{ matrix.service }}-image
+          railway up --service ${{ matrix.service }}
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
