@@ -9,4 +9,5 @@ RUN ./gradlew :back-trip-app:clean :back-trip-app:build -x test --no-daemon --no
 FROM openjdk:16-jdk-slim
 WORKDIR /app/back-trip-app
 COPY --from=builder /app/back-trip-app/build/libs/*.jar app.jar
+ENV SPRING_PROFILES_ACTIVE=prod
 CMD ["java", "-jar", "app.jar"]

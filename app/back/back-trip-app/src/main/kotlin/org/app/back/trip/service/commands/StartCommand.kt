@@ -11,7 +11,7 @@ class StartCommand() : Command {
     override fun apply(update: Update): SendMessage {
         return SendMessage().apply {
             this.chatId = update.message.chatId.toString()
-            this.text = "Выберите свой часовой пояс ниже:"
+            this.text = "Выберите свой часовой пояс ниже :"
             this.replyMarkup = createInlineKeyboardMarkup()
         }
     }
