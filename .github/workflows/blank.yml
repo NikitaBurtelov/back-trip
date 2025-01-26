@@ -57,10 +57,8 @@ jobs:
         run: |
           if [ "${{ matrix.service }}" == "back-trip-app" ]; then
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MAIN_APP }}
-            cd ./app/back/back-trip-app
           elif [ "${{ matrix.service }}" == "back-trip-manager" ]; then
-            export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}
-            cd ./app/back/back-trip-manager
+            export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}          
           fi
           railway up --service ${{ matrix.service }}
 
