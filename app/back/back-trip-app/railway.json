@@ -1,0 +1,10 @@
+{
+  "$schema": "https://backboard.railway.app/railway.schema.json",
+  "build": {
+    "builder": null
+  },
+  "deploy": {
+    "image": "${IMAGE}",
+    "startCommand": "java -jar app.jar"
+  }
+}
