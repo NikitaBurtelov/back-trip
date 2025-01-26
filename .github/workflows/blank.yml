@@ -28,18 +28,6 @@ jobs:
           distribution: 'temurin'
           java-version: '16'
 
-      - name: Build with Gradle
-        env:
-          DB_URL: ${{ secrets.DB_URL }}
-          DB_USERNAME: ${{ secrets.DB_USERNAME }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          API_KEY: ${{ secrets.API_KEY }}
-          TG_BOT_KEY: ${{ secrets.TG_BOT_KEY }}
-          TG_BOT_NAME: ${{ secrets.TG_BOT_NAME }}
-          TG_BOT_MANAGER_URL: ${{ secrets.TG_BOT_MANAGER_URL }}
-        working-directory: ./app/back
-        run: ./gradlew build --info -Dspring.profiles.active=prod
-
       - name: Log in to DockerHub
         uses: docker/login-action@v2
         with:
@@ -47,10 +35,9 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build Docker image for ${{ matrix.service }}
+        working-directory: ./app/back
         run: |
-          BASE_PATH="app/back"
-          SERVICE_PATH="$BASE_PATH/${{ matrix.service }}"
-          cd $BASE_PATH
+          SERVICE_PATH="${{ matrix.service }}"
           docker build -t ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }} -f $SERVICE_PATH/Dockerfile .
 
       - name: Verify Docker image built successfully
