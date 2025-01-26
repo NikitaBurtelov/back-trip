@@ -1,4 +1,6 @@
 # Railway конфигурация для микросервисов
+[builds]
+builder = "docker"
 
 # Описание настроек для service-a
 [builds.back-trip-app]
