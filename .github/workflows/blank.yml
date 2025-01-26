@@ -60,7 +60,7 @@ jobs:
           elif [ "${{ matrix.service }}" == "back-trip-manager" ]; then
             export RAILWAY_PROJECT=${{ secrets.RAILWAY_PROJECT_BACK_TRIP_MANAGER }}          
           fi
-          railway variables --set IMAGE=${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }}:v1.1
+          railway variables --set IMAGE=${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }}-v1.1
           railway up --service ${{ matrix.service }}-image
 
       - name: Cache Gradle dependencies
