@@ -1,0 +1,14 @@
+# Railway конфигурация для микросервисов
+
+# Описание настроек для service-a
+[builds.back-trip-app]
+# Контекст сборки - папка service-a
+context = "/app/back"
+# Путь к Dockerfile внутри контекста
+dockerfile = "back-trip-app/Dockerfile"
+# Описание настроек для service-b
+[builds.back-trip-manager]
+# Контекст сборки - папка service-b
+context = "/app/back"
+# Путь к Dockerfile внутри контекста
+dockerfile = "back-trip-manager/Dockerfile"
