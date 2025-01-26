@@ -1,9 +1,12 @@
-FROM gradle:7.5.1-jdk17 AS builder
-WORKDIR ./app/back
-COPY . .
-RUN ./gradlew build --no-daemon --stacktrace
-FROM openjdk:17-jdk
-WORKDIR /app/back/back-trip-app
-COPY --from=builder /app/build/libs/back-trip-app-*.jar app.jar
-ENV SPRING_PROFILES_ACTIVE=prod
+FROM gradle:7.3.3 AS builder
+WORKDIR /app
+COPY build.gradle.kts settings.gradle.kts gradlew ./
+COPY gradle gradle
+COPY back-trip-app/build.gradle.kts ./back-trip-app/build.gradle.kts
+RUN ./gradlew dependencies --no-daemon --no-watch-fs
+COPY back-trip-app/src ./back-trip-app/src
+RUN ./gradlew :back-trip-app:clean :back-trip-app:build -x test --no-daemon --no-watch-fs
+FROM openjdk:16-jdk-slim
+WORKDIR /app/back-trip-app
+COPY --from=builder /app/back-trip-app/build/libs/*.jar app.jar
 CMD ["java", "-jar", "app.jar"]

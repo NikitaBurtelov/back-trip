@@ -22,7 +22,7 @@ val kotlinVersion = rootProject.extra["kotlinVersion"]
 val springBootVersion = rootProject.extra["springBootVersion"]
 
 extra.apply {
-    set("kotlinStdlibJdk17", "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
+    set("kotlinStdlibJdk16", "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
     set("kotlinReflect", "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion")
     set("kotlinxCoroutinesCore", "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
 
@@ -90,14 +90,14 @@ configure(subprojects) {
 
 
     configure<JavaPluginConvention> {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_16
+        targetCompatibility = JavaVersion.VERSION_16
     }
 
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
             freeCompilerArgs = listOf("-Xjsr305=strict")
-            jvmTarget = "17"
+            jvmTarget = "16"
         }
     }
 
@@ -110,7 +110,7 @@ configure(subprojects) {
     }
 
     dependencies {
-        "implementation"(rootProject.extra["kotlinStdlibJdk17"] as String)
+        "implementation"(rootProject.extra["kotlinStdlibJdk16"] as String)
         "implementation"(rootProject.extra["kotlinReflect"] as String)
         "implementation"(rootProject.extra["kotlinxCoroutinesCore"] as String)
 

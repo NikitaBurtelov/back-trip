@@ -22,11 +22,11 @@ jobs:
       - name: Enable debug logs
         run: echo "ACTIONS_STEP_DEBUG=true" >> $GITHUB_ENV
 
-      - name: Set up JDK 17
+      - name: Set up JDK 16
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '16'
 
       - name: Build with Gradle
         env:
@@ -50,8 +50,8 @@ jobs:
         run: |
           BASE_PATH="app/back"
           SERVICE_PATH="$BASE_PATH/${{ matrix.service }}"
-          cd $SERVICE_PATH
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }} .
+          cd $BASE_PATH
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/prod-app:${{ matrix.service }} -f $SERVICE_PATH/Dockerfile .
 
       - name: Verify Docker image built successfully
         run: docker images | grep "${{ matrix.service }}"
