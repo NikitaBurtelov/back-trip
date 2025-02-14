@@ -2,6 +2,7 @@ package org.app.back.trip.service.bot
 
 import mu.KotlinLogging
 import org.app.back.trip.config.properties.BackTripAppProperties
+import org.app.back.trip.exceptions.UserRequestException
 import org.app.back.trip.service.handler.CommandHandler
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
@@ -26,10 +27,17 @@ class BackTripBot @Autowired constructor(
         try {
             val message = commandHandler.runCommand(update)
             execute(message)
+        } catch (e: UserRequestException) {
+            execute(e.systemResponse())
         } catch (e: Exception) {
             val chatId = update.message.chatId.toString()
             log.warn { e.message }
-            execute(SendMessage(chatId, "Error"))
+            execute(
+                SendMessage(
+                    chatId,
+                    "⚠\uFE0F произошла непредвиденная ошибка"
+                )
+            )
         }
     }
 }

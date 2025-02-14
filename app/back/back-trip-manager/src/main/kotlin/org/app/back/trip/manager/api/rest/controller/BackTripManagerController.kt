@@ -6,7 +6,6 @@ import org.app.back.trip.manager.dto.RoutesInfoRs
 import org.app.back.trip.manager.service.ManagerService
 import org.app.back.trip.manager.service.RoutesService
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
@@ -22,17 +21,11 @@ class BackTripManagerController @Autowired constructor(
     fun timetable(
         @RequestBody routesInfoRq: RoutesInfoRq
     ): ResponseEntity<RoutesInfoRs> {
-        return try {
-            log.info("Request received: $routesInfoRq")
-            val routeSearchRq = managerService.stationInfo(routesInfoRq)
-            val routesInfoRs = routesService.searchRoutes(routeSearchRq)
-            ResponseEntity.ok(
-                routesInfoRs
-            )
-        }
-        catch (e: Exception) {
-            log.info(e.message)
-            ResponseEntity(HttpStatus.BAD_REQUEST)
-        }
+        log.info("Request received: $routesInfoRq")
+        val routeSearchRq = managerService.stationInfo(routesInfoRq)
+        val routesInfoRs = routesService.searchRoutes(routeSearchRq)
+        return ResponseEntity.ok(
+            routesInfoRs
+        )
     }
 }

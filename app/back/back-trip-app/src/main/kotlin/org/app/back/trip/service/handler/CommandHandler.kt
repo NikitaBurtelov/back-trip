@@ -2,11 +2,14 @@ package org.app.back.trip.service.handler
 
 import mu.KotlinLogging
 import org.app.back.trip.config.properties.BackTripAppProperties
+import org.app.back.trip.exceptions.UserRequestException
 import org.app.back.trip.service.buttons.Button
 import org.app.back.trip.service.buttons.TimeZoneButton
 import org.app.back.trip.service.commands.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
+import org.springframework.web.client.ResourceAccessException
+import org.springframework.web.server.ResponseStatusException
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage
 import org.telegram.telegrambots.meta.api.objects.Update
 
@@ -52,17 +55,41 @@ class CommandHandler @Autowired constructor(
                 val command = update.callbackQuery.data.split(" ").first()
                 buttons[command]!!.apply(update)
             } else {
-                throw Exception()
+                throw UserRequestException(
+                    SendMessage(
+                        update.message.chatId.toString(),
+                        "⚠\uFE0F неизвестная команда"
+                    )
+                )
             }
-        } catch (e: Exception) {
-            val warnMessage = "$e: Unable to determine command"
-            log.warn(warnMessage)
-            throw Exception(warnMessage)
+        } catch (e: ResponseStatusException) {
+            throw UserRequestException(
+                SendMessage(
+                    update.message.chatId.toString(),
+                    "⚠\uFE0F не удалось выполнить команду"
+                )
+            )
+        } catch (e: ResourceAccessException) {
+            throw UserRequestException(
+                SendMessage(
+                    update.message.chatId.toString(),
+                    "⚠\uFE0F сервер временно недоступен"
+                )
+            )
+        }
+        catch (e: Exception) {
+            val warnMessage = "Unexpected error: $e"
+            log.error(warnMessage)
+            throw UserRequestException(
+                SendMessage(
+                    update.message.chatId.toString(),
+                    "⚠\uFE0F не удалось выполнить команду"
+                )
+            )
         }
     }
 
     private fun removePrefix(text: String, prefix: String): String {
-        val trim = text.removePrefix(prefix).trim()
-        return trim
+        return text.removePrefix(prefix).trim()
     }
 }

@@ -1,7 +1,9 @@
 package org.app.back.trip.service.commands
 
+import com.google.gson.GsonBuilder
 import mu.KotlinLogging
 import org.app.back.trip.config.properties.BackTripAppProperties
+import org.app.back.trip.dto.ErrorResponse
 import org.app.back.trip.dto.RoutesInfoRq
 import org.app.back.trip.dto.RoutesInfoRs
 import org.app.back.trip.service.user.UserService
@@ -10,13 +12,15 @@ import org.springframework.http.HttpEntity
 import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpMethod
 import org.springframework.stereotype.Service
-import org.springframework.web.client.RestTemplate
+import org.springframework.web.client.*
+import org.springframework.web.server.ResponseStatusException
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage
 import org.telegram.telegrambots.meta.api.objects.Update
 import java.time.Instant
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
+import javax.persistence.EntityNotFoundException
 
 @Service
 class TripCommand @Autowired constructor(
@@ -52,17 +56,40 @@ class TripCommand @Autowired constructor(
                 "${properties.backTripManagerUrl}/api/v1/info",
                 HttpMethod.POST,
                 HttpEntity(request, headers),
-                RoutesInfoRs::class.java
+                String::class.java
             )
-            val routesInfoRs = response.body
+            response.body
                 ?: throw IllegalArgumentException("Segments list is empty")
 
-            return SendMessage(
-                message.chatId.toString(),
-                routesInfoMapping(routesInfoRs, dateTimeInZone)
-            )
+            val gson = GsonBuilder().setPrettyPrinting().create()
+
+            if (response.statusCode.isError) {
+                val errorResponse = gson.fromJson(
+                    response.body,
+                    ErrorResponse::class.java
+                )
+                throw ResponseStatusException(response.statusCode, "Ошибка API: ${errorResponse.message}")
+            } else {
+                val routesInfoRs = gson.fromJson(
+                    response.body,
+                    RoutesInfoRs::class.java
+                )
+                return SendMessage(
+                    message.chatId.toString(),
+                    routesInfoMapping(routesInfoRs, dateTimeInZone)
+                )
+            }
+        } catch (e: EntityNotFoundException) {
+            log.warn("Entity not found: ${e.message}", e)
+            throw e
+        } catch (e: IllegalArgumentException) {
+            log.warn("Invalid argument: ${e.message}", e)
+            throw e
+        } catch (e: ResourceAccessException) {
+            log.error("Resource access error (timeout or service unavailable): ${e.message}", e)
+            throw e
         } catch (e: Exception) {
-            log.warn { e.message }
+            log.error("Unknown error: ${e.message}", e)
             throw e
         }
     }

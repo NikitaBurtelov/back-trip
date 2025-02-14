@@ -1,6 +1,7 @@
 package org.app.back.trip.manager.service
 
 import com.google.gson.GsonBuilder
+import com.google.gson.JsonSyntaxException
 import mu.KotlinLogging
 import org.app.back.trip.manager.config.properties.BackTripManagerProperties
 import org.app.back.trip.manager.db.domain.RoutesEntity
@@ -8,7 +9,9 @@ import org.app.back.trip.manager.dto.RouteSearchRs
 import org.app.back.trip.manager.dto.RoutesInfoRq
 import org.app.back.trip.manager.repository.RoutesRepository
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
+import org.springframework.web.client.HttpClientErrorException
 import org.springframework.web.client.RestTemplate
 
 @Service
@@ -23,6 +26,7 @@ class ManagerServiceImpl @Autowired constructor(
         try {
             val codeStationFrom = findRoutesEntityByTitle(request.from).codeStation
             val codeStationTo = findRoutesEntityByTitle(request.to).codeStation
+            val gson = GsonBuilder().setPrettyPrinting().create()
 
             val resp = restTemplate.getForEntity(
                 properties.baseUrl +
@@ -38,16 +42,23 @@ class ManagerServiceImpl @Autowired constructor(
                 String::class.java
             )
 
-            log.info("YANDEX rs: ${resp.body}")
-
-            val gson = GsonBuilder().setPrettyPrinting().create()
+            if (resp.statusCode != HttpStatus.OK) {
+                log.warn("Error from service: ${resp.body}")
+                throw RuntimeException("Ошибка от API: ${resp.body}")
+            }
 
             return gson.fromJson(
                 resp.body,
                 RouteSearchRs::class.java
             )
+        } catch (e: HttpClientErrorException) {
+            log.error("HTTP error: ${e.statusCode}. Response body: ${e.responseBodyAsString}", e)
+            throw e
+        } catch (e: JsonSyntaxException) {
+            log.error("JSON parsing error: ${e.message}", e)
+            throw e
         } catch (e: Exception) {
-            log.warn(e.message)
+            log.error("Unexpected error occurred: ${e.message}", e)
             throw e
         }
     }
