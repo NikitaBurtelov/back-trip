@@ -44,7 +44,9 @@ extra.apply {
     set("oracleJdbc", "com.oracle.database.jdbc:ojdbc11:23.8.0.25.04")
 
     set("telegramBots", "org.telegram:telegrambots:6.9.7.1")
-    set("telegramStarter", "org.telegram:telegrambots-spring-boot-starter:5.7.1")
+    set("telegramStarter", "org.telegram:telegrambots-springboot-longpolling-starter:8.3.0")
+    set("telegramClient", "org.telegram:telegrambots-client:8.3.0")
+    set("okHttp", "com.squareup.okhttp3:okhttp:4.12.0")
 
     set("dotenv", "io.github.cdimascio:dotenv-kotlin:6.4.1")
     set("jsoup", "org.jsoup:jsoup:1.17.2")
@@ -90,13 +92,9 @@ configure(subprojects) {
 
         implementation(rootProject.extra["postgresql"] as String)
         implementation(rootProject.extra["oracleJdbc"] as String)
-        implementation(rootProject.extra["telegramBots"] as String)
-        implementation(rootProject.extra["telegramStarter"] as String)
         implementation(rootProject.extra["dotenv"] as String)
         implementation(rootProject.extra["jsoup"] as String)
 
-        implementation(rootProject.extra["springKafka"] as String)
-        implementation(rootProject.extra["springRetry"] as String)
         implementation(rootProject.extra["springDoc"] as String)
 
         implementation(rootProject.extra["kotlinLogging"] as String)

@@ -6,7 +6,6 @@ import org.springframework.boot.web.client.RestTemplateBuilder
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.client.RestTemplate
-import org.telegram.telegrambots.bots.DefaultBotOptions
 import java.time.Duration
 
 
@@ -23,11 +22,4 @@ class BackTripConfig {
 
     @Bean
     fun objectMapper() = ObjectMapper().registerModule(kotlinModule())
-
-    @Bean
-    fun defaultBotOptions() = DefaultBotOptions().apply {
-        this.proxyType = DefaultBotOptions.ProxyType.NO_PROXY
-        this.getUpdatesTimeout = 50
-        this.getUpdatesLimit = 100
-    }
 }

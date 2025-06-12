@@ -5,16 +5,17 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage
 import org.telegram.telegrambots.meta.api.objects.Update
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardRow
 
 @Component
 class StartCommand() : Command {
     override fun apply(update: Update): SendMessage {
-        return SendMessage().apply {
-            this.chatId = update.message.chatId.toString()
-            this.text = "Выберите свой часовой пояс ниже :"
-            this.replyMarkup = createInlineKeyboardMarkup()
+        return SendMessage.builder()
+            .chatId(update.message.chatId.toString())
+            .text("Выберите свой часовой пояс ниже :")
+            .replyMarkup(createInlineKeyboardMarkup())
+            .build()
         }
-    }
 
     private fun createInlineKeyboardMarkup(): InlineKeyboardMarkup {
         val tzText = listOf(
@@ -30,16 +31,18 @@ class StartCommand() : Command {
             listOf("UTC+11", "\uD83D\uDD70 UTC+11 Magadan"),
             listOf("UTC+12", "\uD83D\uDD70 UTC+12 Petropavlovsk-Kamchatsky"),
         )
-        val tzKeyboard = InlineKeyboardMarkup(
-            tzText.map {
-                listOf(
-                    InlineKeyboardButton().apply {
-                        callbackData = "/tz ${it[0]}"
-                        text = it[1]
-                    }
-                )
-            }
-        )
+
+        val tzKeyboard = InlineKeyboardMarkup.builder()
+            .keyboard(
+                tzText.map {
+                    InlineKeyboardRow(
+                        InlineKeyboardButton.builder()
+                            .callbackData("/tz ${it[0]}")
+                            .text(it[1])
+                            .build()
+                    )
+                }
+            ).build()
 
         return tzKeyboard
     }
