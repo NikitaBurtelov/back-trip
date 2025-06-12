@@ -1,6 +1,6 @@
 package org.app.back.trip.db
 
-import javax.persistence.*
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "users", schema = "public")

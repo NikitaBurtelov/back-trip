@@ -1,5 +1,7 @@
 plugins {
+    kotlin("jvm")
     kotlin("plugin.jpa")
+    id("org.springframework.boot")
 }
 
 dependencies {
@@ -13,7 +15,11 @@ dependencies {
     implementation("com.google.code.gson:gson:2.9.0")
     implementation(rootProject.extra["jsoup"] as String)
     implementation(rootProject.extra["postgresql"] as String)
-    implementation(rootProject.extra["jdbc"] as String)
+    implementation(rootProject.extra["oracleJdbc"] as String)
     runtimeOnly(rootProject.extra["postgresql"] as String)
-    runtimeOnly(rootProject.extra["jdbc"] as String)
+    runtimeOnly(rootProject.extra["oracleJdbc"] as String)
+}
+
+tasks.withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
+    mainClass.set("org.app.back.trip.routes.BackTripRoutesAppKt")
 }

@@ -1,6 +1,7 @@
 package org.app.back.trip.service.commands
 
 import com.google.gson.GsonBuilder
+import jakarta.persistence.EntityNotFoundException
 import mu.KotlinLogging
 import org.app.back.trip.config.properties.BackTripAppProperties
 import org.app.back.trip.dto.ErrorResponse
@@ -20,7 +21,6 @@ import java.time.Instant
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
-import javax.persistence.EntityNotFoundException
 
 @Service
 class TripCommand @Autowired constructor(
@@ -43,8 +43,8 @@ class TripCommand @Autowired constructor(
             val formattedDate = dateTimeInZone.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
 
             val request = RoutesInfoRq(
-                from = data[0].strip(),
-                to = data[1].strip(),
+                from = data[0].trim(),
+                to = data[1].trim(),
                 tz = userTz,
                 date = formattedDate
             )

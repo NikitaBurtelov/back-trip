@@ -1,6 +1,6 @@
 package org.app.back.trip.manager.db.domain
 
-import javax.persistence.*
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "routes", schema = "public")
