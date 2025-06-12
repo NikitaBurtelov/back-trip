@@ -1,143 +1,79 @@
-buildscript {
-    extra.apply {
-        set("kotlinVersion", "1.6.0")
-        set("springBootVersion", "2.6.1")
-    }
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-    repositories {
-        mavenCentral()
-    }
-
-    val kotlinVersion = rootProject.extra["kotlinVersion"]
-    val springBootVersion = rootProject.extra["springBootVersion"]
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
-        classpath("org.jetbrains.kotlin:kotlin-allopen:$kotlinVersion")
-        classpath("org.jetbrains.kotlin:kotlin-noarg:$kotlinVersion")
-    }
+plugins {
+    kotlin("jvm") version "2.1.21"
+    kotlin("plugin.spring") version "2.1.21"
+    kotlin("plugin.allopen") version "2.1.21"
+    kotlin("plugin.noarg") version "2.1.21"
+    id("org.springframework.boot") version "3.5.0"
+    id("io.spring.dependency-management") version "1.1.4"
+    id("jacoco")
 }
 
-val kotlinVersion = rootProject.extra["kotlinVersion"]
-val springBootVersion = rootProject.extra["springBootVersion"]
+group = "org.app.back.trip"
+version = "1.0.0"
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+}
 
 extra.apply {
-    set("kotlinStdlibJdk16", "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
-    set("kotlinReflect", "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion")
-    set("kotlinxCoroutinesCore", "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
-
-    set("springBootTest", "org.springframework.boot:spring-boot-test:$springBootVersion")
-    set("springBootStarterTest", "org.springframework.boot:spring-boot-starter-test:$springBootVersion")
-    set("springBootStarterWeb", "org.springframework.boot:spring-boot-starter-web:$springBootVersion")
-    set("springBootStarterWebServices", "org.springframework.boot:spring-boot-starter-web-services:$springBootVersion")
-    set("springBootStarterDataJpa", "org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion")
-    set("springBootStarterActuator", "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion")
-
-    //Tg api
-    set("telegramBots", "org.telegram:telegrambots:6.9.7.1")
-
-    //DataBase
-    set("postgresql", "org.postgresql:postgresql:42.3.1")
-    set("jdbc", "com.oracle.database.jdbc:ojdbc8")
-
-    //Jsoup
-    set("jsoup", "org.jsoup:jsoup:1.14.3")
-
-    set("springDataKeyValue", "org.springframework.data:spring-data-keyvalue:2.6.0")
-    set("springKafka", "org.springframework.kafka:spring-kafka:2.8.0")
-    set("springRetry", "org.springframework.retry:spring-retry:1.3.1")
-
-    set("logging", "io.github.microutils:kotlin-logging-jvm:2.1.21")
-    set("springBootStarterLogging", "org.springframework.boot:spring-boot-starter-logging")
-
-    set("junit", "junit:junit:4.12")
-
-    set("dotEnv", "io.github.cdimascio:dotenv-kotlin:6.2.2")
-
-    set("junitJupiterApi", "org.junit.jupiter:junit-jupiter-api:5.8.2")
-    set("junitJupiterEngine", "org.junit.jupiter:junit-jupiter-engine:5.8.2")
-    set("junitJupiterParams", "org.junit.jupiter:junit-jupiter-params:5.8.2")
-    set("junitVintageEngine", "org.junit.vintage:junit-vintage-engine:5.8.2")
-    set("junitJupiterLauncher", "org.junit.platform:junit-platform-launcher:1.8.2")
-    set("telegramStarter", "org.telegram:telegrambots-spring-boot-starter:5.7.1")
-
-    set("mockitoCore", "org.mockito:mockito-core:4.1.0")
-    set("mockitoJupiter", "org.mockito:mockito-junit-jupiter:4.1.0")
-    set("mockitoInline", "org.mockito:mockito-inline:4.1.0")
-    set("mockitoKotlin", "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
-
-    set("springDocOpenApiUi", "org.springdoc:springdoc-openapi-ui:1.6.1")
+    set("kotlinCoroutines", "1.8.1")
+    set("postgresql", "42.7.3")
+    set("oracleJdbc", "23.4.0.0")
+    set("telegramBots", "6.9.7.1")
+    set("dotenv", "6.4.1")
+    set("jsoup", "1.17.2")
+    set("springKafka", "3.2.2")
+    set("springRetry", "2.0.3")
+    set("springDoc", "2.5.1")
+    set("kotlinLogging", "3.0.5")
+    set("junit", "5.11.0")
+    set("mockito", "5.12.0")
+    set("mockitoKotlin", "5.3.1")
 }
 
-configure(subprojects) {
-    repositories {
-        mavenCentral()
-        maven { url = uri("https://repo.spring.io/milestone") }
-        maven { url = uri("https://repo.spring.io/snapshot") }
-    }
+repositories {
+    mavenCentral()
+    maven("https://repo.spring.io/milestone")
+    maven("https://repo.spring.io/snapshot")
+}
 
-    apply(plugin = "org.springframework.boot")
-    apply(plugin = "java")
-    apply(plugin = "kotlin")
-    apply(plugin = "idea")
-    apply(plugin = "jacoco")
-    apply(plugin = "io.spring.dependency-management")
-    apply(plugin = "kotlin-spring")
-    apply(plugin = "java-library")
+dependencies {
+    implementation(kotlin("stdlib"))
+    implementation(kotlin("reflect"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${rootProject.extra["kotlinCoroutines"]}")
 
-    group = "org.app.back.trip"
-    version = "1.0"
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-logging")
 
+    implementation("org.postgresql:postgresql:${rootProject.extra["postgresql"]}")
+    implementation("com.oracle.database.jdbc:ojdbc11:${rootProject.extra["oracleJdbc"]}")
+    implementation("org.telegram:telegrambots:${rootProject.extra["telegramBots"]}")
+    implementation("org.telegram:telegrambots-spring-boot-starter:${rootProject.extra["telegramBots"]}")
+    implementation("io.github.cdimascio:dotenv-kotlin:${rootProject.extra["dotenv"]}")
+    implementation("org.jsoup:jsoup:${rootProject.extra["jsoup"]}")
 
-    configure<JavaPluginConvention> {
-        sourceCompatibility = JavaVersion.VERSION_16
-        targetCompatibility = JavaVersion.VERSION_16
-    }
+    implementation("org.springframework.kafka:spring-kafka:${rootProject.extra["springKafka"]}")
+    implementation("org.springframework.retry:spring-retry:${rootProject.extra["springRetry"]}")
+    implementation("org.springdoc:springdoc-openapi-ui:${rootProject.extra["springDoc"]}")
 
-    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions {
-            freeCompilerArgs = listOf("-Xjsr305=strict")
-            jvmTarget = "16"
-        }
-    }
+    implementation("io.github.microutils:kotlin-logging-jvm:${rootProject.extra["kotlinLogging"]}")
 
-    tasks.withType<JavaCompile> {
-        options.compilerArgs.addAll(arrayOf("-parameters", "-Xdoclint:none", "-Xlint:all"))
-    }
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.junit.jupiter:junit-jupiter:${rootProject.extra["junit"]}")
+    testImplementation("org.mockito:mockito-core:${rootProject.extra["mockito"]}")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:${rootProject.extra["mockitoKotlin"]}")
+}
 
-    tasks.withType<Test> {
-        useJUnitPlatform()
-    }
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "21"
+}
 
-    dependencies {
-        "implementation"(rootProject.extra["kotlinStdlibJdk16"] as String)
-        "implementation"(rootProject.extra["kotlinReflect"] as String)
-        "implementation"(rootProject.extra["kotlinxCoroutinesCore"] as String)
-
-        "implementation"(rootProject.extra["springBootStarterActuator"] as String)
-        "implementation"(rootProject.extra["springBootStarterWeb"] as String)
-
-        "implementation"(rootProject.extra["logging"] as String)
-        "implementation"(rootProject.extra["springBootStarterLogging"] as String)
-
-        "implementation"(rootProject.extra["dotEnv"] as String)
-
-        "testImplementation"(rootProject.extra["springBootTest"] as String)
-        "testImplementation"(rootProject.extra["springBootStarterTest"] as String)
-
-        "testImplementation"(rootProject.extra["junitJupiterApi"] as String)
-        "testImplementation"(rootProject.extra["junitJupiterEngine"] as String)
-        "testImplementation"(rootProject.extra["junitJupiterParams"] as String)
-        "testImplementation"(rootProject.extra["junitJupiterParams"] as String)
-        "testImplementation"(rootProject.extra["junitJupiterLauncher"] as String)
-        "testImplementation"(rootProject.extra["mockitoCore"] as String)
-        "testImplementation"(rootProject.extra["mockitoJupiter"] as String)
-        "testImplementation"(rootProject.extra["mockitoKotlin"] as String)
-        "testImplementation"(rootProject.extra["mockitoInline"] as String)
-    }
-
-    tasks.withType<Jar> {
-        archiveBaseName.set(project.name)
-        archiveVersion.set("1.0.0")
-    }
+tasks.test {
+    useJUnitPlatform()
 }
