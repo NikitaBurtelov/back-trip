@@ -53,7 +53,7 @@ extra.apply {
 
     set("springKafka", "org.springframework.kafka:spring-kafka:3.2.2")
     set("springRetry", "org.springframework.retry:spring-retry:2.0.3")
-    set("springDoc", "org.springdoc:springdoc-openapi-ui:1.8.0")
+    set("springDoc", "org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9")
 
     set("kotlinLogging", "io.github.microutils:kotlin-logging-jvm:3.0.5")
 
